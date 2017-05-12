@@ -1,0 +1,484 @@
+@font-face {
+    font-family: Colaborate-Bold;
+    src: url(../typographie/ColabBol.otf);
+}
+
+@font-face {
+    font-family: Colaborate-Light;
+    src: url(../typographie/ColabLig.otf);
+}
+
+@font-face {
+    font-family: Colaborate-Medium;
+    src: url(../typographie/ColabMed.otf);
+}
+
+@font-face {
+    font-family: Colaborate-Regular;
+    src: url(../typographie/ColabReg.otf);
+}
+
+@font-face {
+    font-family: Colaborate-Thin;
+    src: url(../typographie/ColabThi.otf);
+}
+
+body {
+    margin: 0;
+    font-family: Colaborate-Regular;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.separateur {
+    display: inline-block;
+    width: 40px;
+    height: 6px;
+    background-color: #5DDCC6;
+}
+
+.hr-separateur {
+	height: 6px;
+	width: 30px;
+	border: 0px;
+    background-color: #5DDCC6;	
+}
+
+.ancre {
+    display: block;
+    position: relative;
+    top: -110px;
+    visibility: hidden;
+}
+
+#contenu {
+    margin: auto;
+    text-align: center;
+}
+
+#entete {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    z-index: 200;
+    border-bottom: 1px solid black;
+    vertical-align: middle;
+}
+
+#entete-logo {
+    display: inline;
+    width: 204px;
+	margin-top: 15px;
+	float: left;
+    margin-left: 13.95%;
+    margin-right: 2.5%;
+}
+
+#entete-menu {
+    left: 100px;
+    padding: 0;
+    margin-top: 0;
+    list-style-type: none;
+    text-align: left;
+    overflow: auto;
+}
+
+#entete-menu li {
+    display: inline-block;
+    margin: 45px 0;
+    padding-left: 4.5%;
+}
+
+#entete-menu div {
+	height: 54px;
+	margin: auto;
+}
+
+#entete-menu a {
+    text-transform: uppercase;
+    color: #666666;
+    font-family: Colaborate-Regular;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+#entete-menu .selectionne div {
+    border-bottom: solid 6px #5DDCC6;
+}
+
+#entete-menu .selectionne a {
+    color: #313131;
+    font-weight: bold;
+}
+
+#entete-langue {
+    float: right;
+    margin-right: 3%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: -130px;
+    color: black;
+    background-color: rgb(238, 238, 238);
+    font-family: Colaborate-Regular;
+    font-size: 15px;
+    color: #3f3f3f;
+}
+
+.section {
+    padding: 30px 0px;
+}
+
+#intro {
+    margin-top: 100px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/nonretina/entete.jpg");
+    height: 450px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#intro h1 {
+	margin-bottom: -6px;
+	padding-top: 8px;
+	text-transform: uppercase;
+	font-size: 64px;
+	font-family: Colaborate-Regular;
+	font-weight: normal;
+	color: white;
+}
+
+#intro h2 {
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: normal;
+	color: white;
+	margin-bottom: 16px;
+	font-family: Colaborate-Regular;
+}
+
+#intro h3 {
+	padding-top: 15px;
+	font-size: 24px;
+	color: white;
+	font-family: Colaborate-Thin;
+	font-weight: normal;
+	color: #fefeff;
+}
+
+#intro button {
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 55px;
+	padding: 14px 14px 11px 18px;    
+	font-family: Colaborate-Regular;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#entreprise h1 {
+	margin-top: 24px;
+	margin-bottom: 13px;
+    color: #062d5d;
+    font: 500 26px Colaborate-Medium;
+}
+
+#entreprise-contenu {
+    display: inline-block;
+    position: relative;
+    max-width: 900px;
+    text-align: left;
+}
+
+#entreprise-texte {
+    text-align: left;
+}
+
+#entreprise-contenu img{
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+}
+
+#entreprise-contenu h2 {
+    position: relative;
+    display: inline-block;
+    left: -45px;
+    background-color: rgb(7, 44, 96);
+    color: white;
+    margin-top: 15px;
+    padding: 15px 70px 15px 40px;
+    white-space: nowrap;
+}
+
+#services {
+    background-color: rgb(19, 49, 87);
+    color: white;
+}
+
+#services-contenu {
+    display: inline-block;
+    text-align: left;
+}
+
+#services-bloc1 {
+    display: inline-block;
+    color: rgb(94, 203, 208);
+    border: 1px solid rgb(94, 203, 208);
+    padding: 25px 25px;
+    max-width: 390px;
+}
+
+#services-bloc2 {
+    display: inline-block;
+    margin-left: 20px;
+    max-width: 390px;
+}
+
+#services-bloc2  em {
+    color: rgb(94, 203, 208);
+    font-style: normal;
+}
+
+#services-bloc2 ul {
+    padding: 15px;
+}
+
+#services-bloc2 li {
+    list-style-type: square;
+}
+
+#equipe {
+    background-color: rgb(238, 238, 238);
+    overflow: auto;
+}
+
+#equipe h1 {
+    color: rgb(6, 27, 70);
+}
+
+.equipe-membre {
+    display: inline-block;
+    background-color: white;
+    max-width: 850px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.equipe-membre h2 {
+    position: relative;
+    left: -50px;
+    display: inline-block;
+    background-color: rgb(8, 44, 96);
+    color: white;
+    margin: 40px 0px 10px;
+    padding: 10px 10px 10px 50px;
+}
+
+.equipe-membre h3 {
+    text-transform: uppercase;
+    color: #33cccc;
+    margin: 0px 0px 20px;
+}
+
+.equipe-membre-desc {
+    overflow: auto;
+    padding-right: 30px;
+    margin-bottom: 35px;
+}
+
+.equipe-membre-suite {
+    color: #33cccc;
+    cursor: pointer;
+}
+
+.equipe-membre-photo {
+    display: inline-block;
+    float: right;
+    max-width: 290px;
+    height: auto;
+}
+
+.tel, .courriel, .linkedin {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.tel {
+    background-image: url("../images/nonretina/telephone.png");
+}
+
+.courriel {
+    background-image: url("../images/nonretina/courriel.png");
+}
+
+.linkedin {
+    background-image: url(../images/nonretina/linkedin.png);
+}
+
+#mc {
+    margin-top: 40px;
+}
+
+#clients {
+    background-image: url("../images/nonretina/clients.jpg");
+    height: 330px;
+    color: white;
+}
+
+#clients .contenu {
+    display: inline-block;
+    max-width: 550px;
+}
+
+#pied {
+    text-align: center;
+    color: rgb(23, 35, 47);
+}
+
+#pied-langue {
+    display: none;
+}
+
+#pied-copyrights {
+    padding: 10px 10px;
+}
+
+@media (max-width: 1050px) {
+	#entete-logo {
+	    margin-left: 5%;
+	    margin-right: 1.5%;
+	}
+
+	#entete-menu li {
+	    padding-left: 2%;
+	}	
+}
+
+@media (max-width: 850px) {
+    .section {
+        padding: 30px 15px;
+    }
+
+    #entete {
+        display: none;
+    }
+    
+    #entete-menu li {
+        display: block;
+    }
+    
+    #entete-langue {
+        display: none;
+    }
+    
+    #intro {
+        margin-top: 0px;
+    }
+    
+    #entreprise-contenu{
+        text-align: center;
+    }
+    
+    #entreprise-contenu img{
+        display: none;
+    }
+    
+    #entreprise-contenu h2 {
+        position: static;
+        display: inline-block;
+    }
+    
+    #entreprise-texte {
+        text-align: left;
+    }
+    
+    #services-contenu {
+        text-align: center;
+    }
+
+    #services-bloc1 {
+        display: inline-block;
+        text-align: left;
+    }
+
+    #services-bloc2 {
+        text-align: left;
+    }
+    
+    .equipe-membre {
+        padding: 0;
+        text-align: center;
+    }
+    
+    .equipe-membre h2 {
+        position: inherit;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .equipe-membre-desc {
+        text-align: left;
+    }
+        
+    .equipe-membre-photo  {
+        display: inline-block;
+        float: inherit;
+        width: 100%;
+    }
+    
+    #pied {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #pied-langue {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: black;
+        background-color: rgb(238, 238, 238);
+        margin: 0;
+        padding: 0;
+    }
+    
+    #pied-copyrights {
+        display: inline;
+        text-align: left;
+    }
+}

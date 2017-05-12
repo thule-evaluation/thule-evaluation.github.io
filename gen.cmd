@@ -1,0 +1,1 @@
+@groovy gen.groovy
