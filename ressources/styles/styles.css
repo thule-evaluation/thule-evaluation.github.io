@@ -25,7 +25,9 @@
 
 body {
     margin: 0;
-    font-family: Colaborate-Regular;
+    font-family: Colaborate-Thin;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 h1, h2, h3 {
@@ -57,7 +59,7 @@ div {
 	height: 6px;
 	width: 30px;
 	border: 0px;
-    background-color: #5DDCC6;	
+    background-color: #5DDCC6;
 }
 
 .ancre {
@@ -83,6 +85,7 @@ div {
     z-index: 200;
     border-bottom: 1px solid black;
     vertical-align: middle;
+    line-height: initial;
 }
 
 #entete-logo {
@@ -158,6 +161,7 @@ div {
     height: 450px;
     padding-top: 100px;
     text-align: center;
+    line-height: initial;
 }
 
 #intro h1 {
@@ -195,7 +199,7 @@ div {
     color: white;
     text-transform: uppercase;
     margin-top: 55px;
-	padding: 14px 14px 11px 18px;    
+	padding: 14px 14px 11px 18px;
 	font-family: Colaborate-Regular;
 	font-size: 16px;
 	font-weight: normal;
@@ -381,7 +385,7 @@ div {
 
 	#entete-menu li {
 	    padding-left: 2%;
-	}	
+	}
 }
 
 @media (max-width: 850px) {
@@ -392,36 +396,36 @@ div {
     #entete {
         display: none;
     }
-    
+
     #entete-menu li {
         display: block;
     }
-    
+
     #entete-langue {
         display: none;
     }
-    
+
     #intro {
         margin-top: 0px;
     }
-    
+
     #entreprise-contenu{
         text-align: center;
     }
-    
+
     #entreprise-contenu img{
         display: none;
     }
-    
+
     #entreprise-contenu h2 {
         position: static;
         display: inline-block;
     }
-    
+
     #entreprise-texte {
         text-align: left;
     }
-    
+
     #services-contenu {
         text-align: center;
     }
@@ -434,12 +438,12 @@ div {
     #services-bloc2 {
         text-align: left;
     }
-    
+
     .equipe-membre {
         padding: 0;
         text-align: center;
     }
-    
+
     .equipe-membre h2 {
         position: inherit;
         width: 100%;
@@ -449,23 +453,23 @@ div {
         margin: 0;
         text-align: center;
     }
-    
+
     .equipe-membre-desc {
         text-align: left;
     }
-        
+
     .equipe-membre-photo  {
         display: inline-block;
         float: inherit;
         width: 100%;
     }
-    
+
     #pied {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
     #pied-langue {
         display: inline-block;
         width: 40px;
@@ -477,7 +481,7 @@ div {
         margin: 0;
         padding: 0;
     }
-    
+
     #pied-copyrights {
         display: inline;
         text-align: left;
