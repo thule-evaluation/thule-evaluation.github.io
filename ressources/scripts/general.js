@@ -1,4 +1,16 @@
 
+function gotoAnchor(event) {
+    var idTarget = event.target.href.substring(event.target.href.indexOf('#')+1, event.target.href.length);
+
+    //event.preventDefault();
+    //console.info(event);
+    //console.info();
+}
+
+function toggleDotDotDot(idDotDotDot, idTexte) {
+    document.getElementById(idDotDotDot).style.display = 'none';
+    document.getElementById(idTexte).style.display = 'inline';
+}
 
 function ajusterSelectionMenu() {
     setTimeout(doAjusterSelectionMenu, 10);
@@ -9,17 +21,17 @@ function doAjusterSelectionMenu() {
         setSectionCourante('entreprise');
         return;
     }
-    
+
     if ($('#services h1').visible(true, false, null, 100)) {
         setSectionCourante('services');
         return;
     }
-    
+
     if ($('#equipe h1').visible(true, false, null, 100)) {
         setSectionCourante('equipe');
         return;
     }
-    
+
     if ($('#clients h1').visible(true, false, null, 100)) {
         setSectionCourante('clients');
         return;

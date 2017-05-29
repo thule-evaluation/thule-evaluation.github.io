@@ -16,16 +16,16 @@
 
             <ul id="entete-menu">
                 <li id="entete-menu-entreprise">
-                    <div><a href="#Entreprise">L'entreprise</a></div>
+                    <div><a href="#Entreprise" onclick="gotoAnchor(event);">L'entreprise</a></div>
                 </li>
                 <li id="entete-menu-services">
-                    <div><a href="#Services">Nos services</a></div>
+                    <div><a href="#Services" onclick="gotoAnchor(event);">Nos services</a></div>
                 </li>
                 <li id="entete-menu-equipe">
-                    <div><a href="#Equipe">Notre équipe</a></div>
+                    <div><a href="#Equipe" onclick="gotoAnchor(event);">Notre équipe</a></div>
                 </li>
                 <li id="entete-menu-clients">
-                    <div><a href="#Clients">Nos clients</a></div>
+                    <div><a href="#Clients" onclick="gotoAnchor(event);">Nos clients</a></div>
                 </li>
             </ul>
 
@@ -49,12 +49,12 @@
                 <img src="ressources/images/nonretina/apropos.jpg" />
                 <h2>Notre mission: vous guider</h2>
                 <div id="entreprise-texte">
-                    Thulé Évaluation Inc. est une entreprise québécoise qui regroupe deux évaluatrices expérimentées et ayant à cœur le développement
-                    de l'évaluation et l'amélioration continue des programmes et des projets.
-                    <br /> L'équipe de Thulé Évaluation Inc. est reconnue comme un leader incontournable dans l'évaluation
-                    des projets collectifs regroupant des partenaires locaux et régionaux issus d'organisations différentes.
-                    L'accompagnement et l'évaluation de projets collectifs exigent une bonne compréhension de la dynamique
-                    des acteurs et des interrelations entre les différents partenaires.
+                    <br>
+                    Thulé Évaluation est une entreprise spécialisée dans l'évaluation de projets, programmes et politiques.<br><br>
+                    L'origine du nom de l'entreprise « Thulé » fait référence à l'époque des grands navigateurs où Thulé était l’île mythique située au point le plus nordique que tout grand explorateur tentait d’atteindre. L'idée derrière ce nom reflète bien notre vision de l'évaluation, soit celle d'un cheminement, d'un processus collectif pour atteindre les objectifs fixés, aussi grands soient-ils.<br><br>
+                    L'entreprise se démarque dans la mise en place d'évaluations participatives et évolutives prenant place dans des contextes d'innovation sociale à fort niveau de complexité.<br><br>
+                    L’une des particularités de l’entreprise est la maîtrise de techniques d’animation permettant la participation active des partenaires impliqués et favorisant la réflexion collective. Ces techniques, inspirées des méthodologies de la recherche participative, sont souvent au cœur des démarches évaluatives menées par Thulé Évaluation.<br><br>
+                    Au-delà d'un savoir technique, les ressources de Thulé Évaluation adoptent une approche visant à permettre le plus grand transfert de compétences évaluatives possible. L’un de nos objectifs est la démocratisation de l’évaluation. En ce sens, nous rendons l’ensemble des méthodologies et techniques utilisées accessibles et surtout, facilement reproductibles.<br><br>
                 </div>
             </div>
         </div>
@@ -87,15 +87,40 @@
             <div id="mp" class="equipe-membre">
                 <img src="ressources/images/nonretina/mp.jpg" class="equipe-membre-photo" />
                 <h2>Marie-Pierre Arsenault, M.Sc.</h2>
-                <h3>Co-Fondatrice</h3>
+                <h3>Fondatrice</h3>
                 <div class="equipe-membre-desc">
-                    Je suis d'abord et avant tout propulsée par le désir de créer un changement, de faire une différence. J'ai choisi l'évaluation
-                    pour y arriver. C'est l'utilité de l'évaluation dans la prise de décision qui m'interpelle particulièrement.
-                    <!--<span class="equipe-membre-suite">[...]</span>-->
+                    Je suis d’abord et avant tout propulsée par le désir de créer un changement. J’ai choisi l’évaluation pour y arriver. C’est l’utilité de l’évaluation dans la prise de décision qui m’interpelle particulièrement.
+                    <span id="mpPlus" class="equipe-membre-suite" onclick="toggleDotDotDot('mpPlus', 'mpPlusTxt');">[...]</span>
+                    <div id="mpPlusTxt" style="display: none">
+                        <br><br>
+                        De par mes expériences variées de travail, j’ai acquis une bonne compréhension des environnements et des dynamiques complexes,
+                        que ce soit des changements rapides dans le temps, de l’innovation sociale ou encore des organisations regroupant des partenaires de secteurs multiples.<br><br>
+                        J’affectionne particulièrement les méthodologies participatives et je suis constamment à l’affût de nouvelles façons de faire. Je suis à la recherche constante de solutions simples et efficaces pour répondre aux besoins évaluatifs mes clients.<br><br>
+                    </div>
+
                     <p>
                         <a class="courriel" href="mailto:%22Marie-Pierre%20Arsenault%22%20%3cmparsenault@thule-evaluation.com%3e"></a>
                         <a class="linkedin" href="https://www.linkedin.com/in/arsenaultmp/fr"></a>
                         <a class="tel" href="tel:1-418-262-7484"></a>
+                    </p>
+                </div>
+            </div>
+
+            <div id="bas" class="equipe-membre">
+                <img src="ressources/images/nonretina/bastien.png" class="equipe-membre-photo" />
+                <h2>Bastien Beauchesne</h2>
+                <div class="equipe-membre-desc">
+                    L'évaluation est l'outil avec lequel j'arrive à contribuer au développement de mon milieu. Face à des défis de plus en plus complexes, le processus d'évaluation me permet de développer une approche analytique claire, mais résolument tournée vers l'action.
+                    <span id="basPlus" class="equipe-membre-suite" onclick="toggleDotDotDot('basPlus', 'basPlusTxt');">[...]</span>
+                    <div id="basPlusTxt" style="display: none">
+                        <br><br>
+                        Priorisant les méthodes mixtes et les approches qui supportent le développement collectif, je reste d'abord un mordu de méthode. Dans des environnements d'exercice regroupement plusieurs acteurs et impliquant des dynamiques complexes et changeantes, l'évaluation participative devient une façon de sortir des sentiers battus pour expérimenter des approches qui visent à produire des résultats utilisables, compréhensible et mobilisant. Ayant oeuvré autant dans le milieu universitaire que dans le milieu associatif, coopératif et communautaire, ma force est d’harmoniser rigueur académique, approche participative et vulgarisation. Les besoins et les capacités d'agir des groupes que je sers sont donc au coeur des processus d'évaluation que j'accompagne ou que je porte.
+                    </div>
+
+                    <p>
+                        <a class="courriel" href="mailto:%22Bastien%20Beauchesne%22%20%3cbbeauchesne@thule-evaluation.com%3e"></a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/bastien-beauchesne-%C3%A9conomie-et-politique-6a78a6104/"></a>
+                        <a class="tel" href="tel:1-418-951-3979"></a>
                     </p>
                 </div>
             </div>

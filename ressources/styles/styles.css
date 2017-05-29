@@ -225,7 +225,6 @@ div {
 }
 
 #entreprise-contenu img{
-    display: inline-block;
     float: left;
     margin-right: 15px;
 }
@@ -293,6 +292,7 @@ div {
     max-width: 850px;
     text-align: left;
     padding-left: 50px;
+    margin-bottom: 50px;
 }
 
 .equipe-membre h2 {
@@ -323,7 +323,6 @@ div {
 }
 
 .equipe-membre-photo {
-    display: inline-block;
     float: right;
     max-width: 290px;
     height: auto;
@@ -331,8 +330,8 @@ div {
 
 .tel, .courriel, .linkedin {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
     text-align: center;
     line-height: 35px;
 }
