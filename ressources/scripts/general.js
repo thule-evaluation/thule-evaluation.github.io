@@ -1,10 +1,14 @@
 
 function gotoAnchor(event) {
-    var idTarget = event.target.href.substring(event.target.href.indexOf('#')+1, event.target.href.length);
+    var idTarget = event.currentTarget.href.substring(event.currentTarget.href.indexOf('#')+1, event.currentTarget.href.length);
 
-    //event.preventDefault();
-    //console.info(event);
-    //console.info();
+    var el = document.getElementById(idTarget);
+    var rect = el.getBoundingClientRect();
+
+    //window.scroll({top: rect.top, left: 0, behavior: 'smooth'});
+    el.scrollIntoView({ behavior: 'smooth' });
+
+    event.preventDefault();
 }
 
 function toggleDotDotDot(idDotDotDot, idTexte) {
