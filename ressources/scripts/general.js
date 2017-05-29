@@ -3,9 +3,7 @@ function gotoAnchor(event) {
     var idTarget = event.currentTarget.href.substring(event.currentTarget.href.indexOf('#')+1, event.currentTarget.href.length);
 
     var el = document.getElementById(idTarget);
-    var rect = el.getBoundingClientRect();
 
-    //window.scroll({top: rect.top, left: 0, behavior: 'smooth'});
     el.scrollIntoView({ behavior: 'smooth' });
 
     event.preventDefault();
