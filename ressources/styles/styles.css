@@ -246,12 +246,14 @@ div {
 }
 
 #services-contenu {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     text-align: left;
 }
 
 #services-bloc1 {
-    display: inline-block;
     color: rgb(94, 203, 208);
     border: 1px solid rgb(94, 203, 208);
     padding: 25px 25px;
